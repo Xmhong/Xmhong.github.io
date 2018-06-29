@@ -1,0 +1,260 @@
+/* ================================= 
+全局设置
+==================================== */
+
+* {
+    box-sizing: border-box;
+    /*让内边距无法改变盒模型的长宽*/
+    list-style: none;
+    /*去除ul的小圆点*/
+    text-decoration: none;
+    /*去除超链接的下划线*/
+}
+
+
+
+/* ================================= 
+移动优先CSS规则
+==================================== */
+
+.main-header {
+    text-align: center;
+    /*令页面文字居中*/
+    background-color: darkblue;
+}
+
+
+.tup {
+    background: url("../images/logo.png");
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+
+.sqButton {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.logo {
+    margin: 0;
+    /*重置logo的外边距*/
+}
+
+.logo a {
+    padding: .5em 0;
+    /*logo上下内边距调整*/
+}
+
+a {
+    /*将所有超链接变成块级元素block(默认显示方式是线级元素inline)*/
+    display: block;
+    color: palevioletred;
+}
+
+.navlist li a {
+    padding: 1.5em 0;
+    /*li上下内边距调整*/
+}
+
+.navlist li a:hover {
+    background-color: chocolate;
+    /*横条背景颜色*/
+}
+
+/*footer是一个标签不是class 不用打.*/
+
+footer {
+    text-align: center;
+    padding: 2em 0;
+    background-color: hotpink;
+    color: black;
+}
+
+.wrap {
+    min-height: calc(100vh - 86px);
+}
+
+.banner {
+    background: url("../images/20110513091138222.jpg");
+    background-size:cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    color: blue;
+    text-shadow: 1px 1px 1px pink
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+
+}
+
+h1 {
+    padding: .5em 0;
+}
+
+h2 {
+    padding: .5em 0;
+}
+
+p {
+    margin: 0;
+    /*P的外边距*/
+}
+
+.col h1 {
+    text-align: center;
+    /*文字居中*/
+    color: deeppink;
+    font-family: fantasy;
+}
+
+
+.col p {
+    padding: 0 1em;
+    text-align: center;
+    font-family: fantasy;
+}
+
+.col {
+    padding: 0.5em 0;
+    background-color: blueviolet;
+    color: coral;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.Father {
+    background-color: black;
+}
+
+.Mather {
+    background-color: darkslateblue;
+}
+
+.container {
+    margin: 15px;
+
+}
+
+/*媒体查询*/
+
+@media (min-width:700px) {
+    .main-header {
+        display: flex;
+        justify-content: space-around;
+        /*调整主轴排列*/
+        align-items: center;
+        /*副轴排列*/
+        box-shadow: 1px 1px 1px;
+        /*上层阴影线*/
+    }
+
+    .navlist {
+        display: flex
+    }
+    .navlist li a {
+        padding: 4em 2em;
+    }
+
+    .banner {
+        height: 550px;
+        margin-top: .5em;
+    }
+    .container {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        padding: 1em 0;
+        /*内边距调整*/
+        justify-content: center;
+    }
+    .col {
+        margin: 0 .5em;
+        flex-basis: 20%;
+        /*弹性宽度*/
+        flex-grow: 1;
+        border-radius: 12px;
+        /*边角圆化*/
+        height: 200px;
+    }
+    .col:hover {
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+        /*边框阴影*/
+        transition: .3s;
+        /*渐变效果*/
+        cursor: none;
+        /*cursor鼠标图标样式*/
+    }
+    .col h1 {
+        padding: 0 1em;
+    }
+    .Father {
+        flex-grow: 2;
+    }
+
+    .sqButton {
+        height: 150px;
+    }
+    .dijia_container {
+        position: relative;
+        margin: 1em;
+    }
+    
+    .tailuo_container{
+        position: relative;
+        margin: 1em;
+        
+    }
+    
+    .saiwen_container{
+        position: relative;
+        margin: 1em;
+    }
+    
+    .ZK{
+        position: relative;
+        margin: 1em;
+    }
+    
+    .sub-menu {
+        color: white;
+        background-color:blue;
+        position: absolute;
+        width: 100%;
+
+    }
+    
+    .sub-menu1 {
+        color: white;
+        background-color:blue;
+        position: absolute;
+        width: 100%;
+    }
+    
+    .sub-menu2 {
+        color: white;
+        background-color:blue;
+        position: absolute;
+        width: 100%;
+
+    }
+
+    .sub-menu li {
+        padding: 1em 0;
+    }
+    
+}

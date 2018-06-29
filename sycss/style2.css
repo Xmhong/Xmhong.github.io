@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    /*让内边距无法改变盒模型的长宽*/
+    list-style: none;
+    /*去除ul的小圆点*/
+    text-decoration: none;
+    /*去除超链接的下划线*/
+}
+
+.Bt{
+    background-color:darkorange;
+    text-align:center;
+    
+}
+
+.Dj{
+    padding: 0;
+}
+
+.DJ a{
+    padding: .5em 0;
+}
+a{
+    display: block;
+    color: firebrick;
+}
+
+.JJ{
+     background: url("../images/aa.jpg");
+    background-size:auto;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    height:650px;
+    color: blue;
+    text-shadow: 1px 1px 1px pink
+}
+
+.sy{
+     display: flex;
+        width: 80%;
+        margin: auto;
+        padding: 1em 0;
+        /*内边距调整*/
+        justify-content: center;
+}
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color:darkviolet;
+    color: black;
+}
+
+.OpenButton{
+    position: relative;
+        margin: 1em;
+}
+
+.sy{
+    background-color: dimgrey;
+    color: crimson;
+    text-align: center;
+}
+
+
+}
